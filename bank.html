@@ -18,18 +18,18 @@
       <section class="mt-12">
         <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
           <div class="bg-blue-600 p-8 rounded-xl font-medium">
-            <h3 class="text-3xl">Diposit</h3>
-            <h2 class="text-5xl">$00</h2>
+            <h3 class="text-3xl">deposit</h3>
+            <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
           </div>
 
           <div class="bg-red-600 p-8 rounded-xl font-medium">
             <h3 class="text-3xl">Withdraw</h3>
-            <h2 class="text-5xl">$00</h2>
+            <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
           </div>
 
           <div class="bg-green-600 p-8 rounded-xl font-medium">
             <h3 class="text-3xl">Balance</h3>
-            <h2 class="text-5xl">$1240</h2>
+            <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
           </div>
         </div>
       </section>
@@ -37,18 +37,18 @@
       <section class="mt-12">
         <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
           <div class="bg-blue-600 p-8 rounded-xl font-medium">
-            <h3 class="text-3xl text-white">Please Diposit</h3>
+            <h3 class="text-3xl text-white">Please deposit</h3>
             <input
-              id="diposit-field"
+              id="deposit-field"
               class="w-9/12 block mb-3 px-3 mt-5"
-              type="email"
-              placeholder="$ Enter Diposit Amount"
+              type="text"
+              placeholder="$ Enter deposit Amount"
             />
             <button
-              id="btn-diposit"
+              id="btn-deposit"
               class="bg-yellow-500 px-6 py-2 text-black font-medium rounded-lg hover:bg-green-600"
             >
-              Diposit
+              deposit
             </button>
           </div>
 
@@ -57,7 +57,7 @@
             <input
               id="withdraw-field"
               class="w-9/12 block mb-3 px-3 mt-5"
-              type="email"
+              type="text"
               placeholder="$ Enter Withdraw Amount"
             />
             <button
@@ -71,6 +71,7 @@
       </section>
     </main>
 
-    <script src=""></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
   </body>
 </html>
