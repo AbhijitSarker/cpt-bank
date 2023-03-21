@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl m-6 text-center">
+        <span class="font-bold text-violet-500">Dashboard</span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+          <div class="bg-blue-600 p-8 rounded-xl font-medium">
+            <h3 class="text-3xl">Diposit</h3>
+            <h2 class="text-5xl">$00</h2>
+          </div>
+
+          <div class="bg-red-600 p-8 rounded-xl font-medium">
+            <h3 class="text-3xl">Withdraw</h3>
+            <h2 class="text-5xl">$00</h2>
+          </div>
+
+          <div class="bg-green-600 p-8 rounded-xl font-medium">
+            <h3 class="text-3xl">Balance</h3>
+            <h2 class="text-5xl">$1240</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div class="bg-blue-600 p-8 rounded-xl font-medium">
+            <h3 class="text-3xl text-white">Please Diposit</h3>
+            <input
+              id="diposit-field"
+              class="w-9/12 block mb-3 px-3 mt-5"
+              type="email"
+              placeholder="$ Enter Diposit Amount"
+            />
+            <button
+              id="btn-diposit"
+              class="bg-yellow-500 px-6 py-2 text-black font-medium rounded-lg hover:bg-green-600"
+            >
+              Diposit
+            </button>
+          </div>
+
+          <div class="bg-red-600 p-8 rounded-xl font-medium">
+            <h3 class="text-3xl text-white">Please Withdraw</h3>
+            <input
+              id="withdraw-field"
+              class="w-9/12 block mb-3 px-3 mt-5"
+              type="email"
+              placeholder="$ Enter Withdraw Amount"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-yellow-500 px-6 py-2 text-black font-medium rounded-lg hover:bg-green-600"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src=""></script>
+  </body>
+</html>
